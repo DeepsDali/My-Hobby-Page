@@ -1,0 +1,18 @@
+body {
+  box-sizing: border-box;
+  background: url(https://img.freepik.com/free-vector/3d-perspective-style-diamond-shape-white-background_1017-27556.jpg?size=626&ext=jpg&ga=GA1.2.2031539190.1612483200);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #504949;
+}
+
+h1 {
+  color: rgb(150, 229, 23);
+  font-size: 2rem;
+  border: 9em;
+  border-color: black;
+}

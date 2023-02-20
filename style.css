@@ -1,34 +1,62 @@
 :root {
   --green: rgba(9, 110, 108, 0.895);
   --purple: rgba(39, 6, 68, 0.717);
-  --pink: rgba(231, 202, 221, 0.895);
+  --pink: rgba(248, 222, 136, 0.895);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-  box-sizing: border-box;
-  background: url(https://media01.stockfood.com/largepreviews/MzA4OTE2ODY=/00996506-Bread-wreaths-with-pearl-sugar-on-baking-tray-close-up.jpg);
+  min-height: 100vh;
+  background: url("https://media01.stockfood.com/largepreviews/MzA4OTE2ODY=/00996506-Bread-wreaths-with-pearl-sugar-on-baking-tray-close-up.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: rgb(238, 242, 245);
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
 }
 
-h1 {
-  font-size: 3rem;
-  margin: auto;
-  margin-bottom: 2vw;
+header {
+  position: sticky;
+  top: 0;
   background-color: var(--pink);
   color: var(--purple);
-  position: sticky;
-  top: 0%;
+  font-size: 1.5rem;
+  padding: 0.25em;
+  text-align: center;
   font-family: "Special Elite", cursive;
-  width: 100%;
 }
 
 .date_time {
   font-family: "Special Elite", cursive;
+}
+h2 {
+  font-family: "Special Elite", cursive;
+}
+#intro {
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  background-image: url(/images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--purple);
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+#love_baking {
+  background-color: rgba(248, 222, 136, 0.502);
+  width: 65vw;
+  margin: auto;
+  text-align: left;
+  padding: 2vw;
 }
 
 #tips {
@@ -61,18 +89,18 @@ h1 {
 li {
   padding: 0.75em;
   text-align: left;
-  /* border-bottom: 0.2px solid whitesmoke; */
+  font-weight: bold;
 }
 
 #section-footer {
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  font-size: 1.5vw;
-  padding: 0.1em;
-  margin-top: 2vw;
+  font-size: 0.75em;
+  padding: 0.5em;
+  margin-top: auto;
   position: sticky;
-  left: 0;
-  bottom: 0;
+  bottom: 0%;
   width: 100%;
   background-color: var(--green);
 }

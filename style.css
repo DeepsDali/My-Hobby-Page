@@ -1,6 +1,6 @@
 :root {
   --green: rgba(9, 110, 108, 0.895);
-  --purple: rgba(39, 6, 68, 0.717);
+  --purple: rgba(39, 6, 68, 0.922);
   --pink: rgba(241, 206, 228, 0.895);
   --cream: rgba(248, 222, 136, 0.895);
 }
@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   min-height: 100vh;
   background: url("https://media01.stockfood.com/largepreviews/MzA4OTE2ODY=/00996506-Bread-wreaths-with-pearl-sugar-on-baking-tray-close-up.jpg");
@@ -27,7 +28,7 @@ header {
   top: 0;
   background-color: var(--pink);
   color: var(--purple);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 0.25em;
   text-align: center;
   font-family: "Special Elite", cursive;
@@ -42,7 +43,7 @@ h2 {
 }
 h3 {
   padding: 2vw;
-  font-size: x-large;
+  font-size: large;
   text-align: left;
 }
 #intro {
@@ -65,6 +66,61 @@ h3 {
   text-align: left;
   padding: 2vw;
 }
+#topping {
+  height: auto;
+  width: 90vw;
+  margin: 2vw auto;
+  padding: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: var(--purple);
+  color: var(--pink);
+  display: flex;
+  flex-direction: column;
+}
+.topping_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.topping_card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+  background-color: var(--pink);
+  width: 250px;
+  margin: 10px;
+  color: var(--purple);
+}
+.topping_card p {
+  padding: 15px;
+}
+.topping_card_image {
+  border-radius: 5px 5px 0 0;
+  height: 200px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+.card-fruit {
+  background-image: url("https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/221_1_1438702573.jpg?tr=w-800,h-1066");
+}
+.card-flower {
+  background-image: url("https://www.bakingo.com/blog/wp-content/uploads/2019/08/2-1.jpg");
+}
+.card-pic {
+  background-image: url("https://www.bakingo.com/blog/wp-content/uploads/2019/08/3.jpg");
+}
+.card-sugar {
+  background-image: url("https://hips.hearstapps.com/ame-prod-goodhousekeeping-assets.s3.amazonaws.com/main/embedded/34412/caramel-cages.png");
+}
+.card-5 {
+  background-image: url("https://www.bakingo.com/blog/wp-content/uploads/2019/08/6.jpg");
+}
+.card-6 {
+  background-image: url("https://www.bakingo.com/blog/wp-content/uploads/2019/08/6.jpg");
+}
 #fav_bake {
   display: flex;
   flex-direction: column;
@@ -84,7 +140,7 @@ h3 {
   flex-direction: column;
   height: auto;
   width: 90vw;
-  margin: auto;
+  margin: 5vw auto;
   padding-left: 2vw;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -98,8 +154,8 @@ h3 {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border: 3px solid var(--purple);
   border-radius: 5px;
-  height: 35vw;
-  width: 30vw;
+  height: 25vw;
+  width: 20vw;
   margin: 2vw;
 }
 .img_fav {
@@ -109,17 +165,18 @@ h3 {
   border: 3px solid var(--pink);
   border-radius: 5px;
   height: 35vw;
-  width: 45vw;
+  width: 55vw;
   margin: 2vw;
 }
-#list {
+
+ul {
   list-style-type: none;
   padding: 0.75em;
 }
 li {
   padding: 0.75em;
   text-align: left;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 #section-footer {
@@ -128,8 +185,9 @@ li {
   justify-content: space-around;
   font-size: 1em;
   padding: 0.5em;
-  margin-top: auto;
-  position: fixed;
+  /* margin-top: auto; */
+
+  position: sticky;
   bottom: 0;
   width: 100%;
   background-color: var(--green);

@@ -1,5 +1,6 @@
 :root {
-  --green: rgba(9, 110, 108, 0.895);
+  --green: rgba(62, 44, 14, 0.895);
+  /* --green: rgba(9, 110, 108, 0.895); */
   --purple: rgba(39, 6, 68, 0.922);
   --pink: rgba(241, 206, 228, 0.895);
   --cream: rgba(248, 222, 136, 0.895);
@@ -20,7 +21,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: rgb(238, 242, 245);
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 header {
@@ -42,9 +43,12 @@ h2 {
   padding: 2vw;
 }
 h3 {
-  padding: 2vw;
+  padding: 1vw;
   font-size: large;
   text-align: left;
+}
+.heading {
+  font-weight: bold;
 }
 #intro {
   height: 100vh;
@@ -170,7 +174,18 @@ ul {
 li {
   padding: 0.75em;
   text-align: left;
-  /* font-weight: bold; */
+}
+#hacks {
+  width: 85vw;
+  margin: auto;
+}
+@media only screen and (min-width: 768px) {
+  #hacks,
+  #trends_content,
+  #fav_bake_content {
+    width: 65vw;
+    margin: auto;
+  }
 }
 #trends {
   height: auto;
@@ -186,7 +201,7 @@ li {
   flex-direction: column;
   text-align: left;
 }
-#trends ul {
+ul {
   width: auto;
   margin: auto;
 }
@@ -197,15 +212,14 @@ a:hover {
   color: var(--pink);
   background-color: var(--purple);
 }
+
 #section-footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 1em;
   padding: 0.5em;
-  /* margin-top: auto; */
-
-  position: sticky;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: var(--green);

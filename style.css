@@ -115,12 +115,6 @@ h3 {
 .card-sugar {
   background-image: url("https://hips.hearstapps.com/ame-prod-goodhousekeeping-assets.s3.amazonaws.com/main/embedded/34412/caramel-cages.png");
 }
-.card-5 {
-  background-image: url("https://www.bakingo.com/blog/wp-content/uploads/2019/08/6.jpg");
-}
-.card-6 {
-  background-image: url("https://www.bakingo.com/blog/wp-content/uploads/2019/08/6.jpg");
-}
 #fav_bake {
   display: flex;
   flex-direction: column;
@@ -178,7 +172,31 @@ li {
   text-align: left;
   /* font-weight: bold; */
 }
-
+#trends {
+  height: auto;
+  width: 90vw;
+  margin: 5vw auto;
+  padding: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: var(--pink);
+  color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#trends ul {
+  width: auto;
+  margin: auto;
+}
+p {
+  padding-left: 2vw;
+}
+a:hover {
+  color: var(--pink);
+  background-color: var(--purple);
+}
 #section-footer {
   display: flex;
   align-items: center;
